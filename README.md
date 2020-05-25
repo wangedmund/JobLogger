@@ -1,1 +1,1 @@
-# jobs-internships
+# JobLogger
