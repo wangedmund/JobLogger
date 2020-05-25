@@ -39,6 +39,6 @@ public class GUI implements ActionListener {
         _label.setText("# of clicks: " + _count);
     }
     public static void main(String[] args) {
-        new GUI();
+        
     }
 }
