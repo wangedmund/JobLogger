@@ -15,8 +15,8 @@ public class GUI implements ActionListener {
     private JPanel _panel;
     private int _count = 0;
     public GUI() {
-        _frame = new JFrame();
-
+        _frame = new JFrame("Job Logger");
+        
         JButton button = new JButton("Click");
         button.addActionListener(this);
         _panel = new JPanel();
@@ -31,6 +31,7 @@ public class GUI implements ActionListener {
         _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         _frame.setTitle("JobLogger");
         _frame.pack();
+        _frame.setSize(700, 500);
         _frame.setVisible(true);
     }
     @Override
