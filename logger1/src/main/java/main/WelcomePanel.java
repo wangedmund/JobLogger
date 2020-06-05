@@ -1,5 +1,6 @@
 package main;
 
+import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -18,8 +19,9 @@ public class WelcomePanel {
     public WelcomePanel() {
         _frame = new JFrame("Welcome to JobLogger");
         _panel =  new JPanel();
+        _panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 30, 30));
         _panel.setLayout(new BoxLayout(_panel, BoxLayout.PAGE_AXIS));
-        JLabel label1 = new JLabel("Welcome to JobLogger ");
+        JLabel label1 = new JLabel("Welcome to JobLogger");
         label1.setFont(new Font("Verdana", Font.PLAIN, 25));
         JLabel label2 = new JLabel("Username: ");
         label2.setFont(new Font("Verdana", Font.PLAIN, 12));
